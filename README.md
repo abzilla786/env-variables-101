@@ -75,3 +75,24 @@ we can do this by running the command:
 chmod 777 example_bash.sh
 ```
 so now if we run the previous command we will se in our terminal My process being printed.
+
+if we create a new variable will a value under the same name, such as:
+```
+MY_VAR=AMAZING
+```
+and run the command for our file again we will see nothing is going to change and only My process will be displayed.
+
+to change this we can simply use
+```
+export MY_VAR=AMAZING
+```
+and what this will do is export the command as a temporary file so that when you run the ./example_bash.sh command again you will see both values displayed.
+
+to create permanent variables outside of the file we have created we can go into our ~ directory and edit the file .zshrc
+
+over there we can write a line for our variable such as:
+
+```
+export MY_VAR=YELLOOWWWWWMELLOWWW
+```
+so that when we close our terminal and run our file again it will display My process along with the new variable we have created as it is now outside of the session dependent limits.
